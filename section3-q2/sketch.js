@@ -11,9 +11,11 @@ function kobeCity(x, y, size){
   noFill();
   strokeWeight(size * 0.25);
   strokeCap(SQUARE);
-  arc(x + size * 0.25, y, size, size, QUARTER_PI * 3, QUARTER_PI * 3 + PI);
-  // BLANK[1]
+  arc(x + size * 0.25, y, size, size, QUARTER_PI * 3, QUARTER_PI * 3 + PI);//直系100の円弧
+  let theta = QUARTER_PI;
+  arc(x + size * 0.25 - 2 * 75 / 2 * cos(theta), y, size, size, QUARTER_PI * 5, QUARTER_PI * 5 + PI);
   pop();
+
 }
 
 // おまけ：神戸大学のロゴを作りたい人向けに色情報だけ置いておきます

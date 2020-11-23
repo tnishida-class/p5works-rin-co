@@ -10,17 +10,21 @@ function setup(){
   console.log(scores);
   barchart(scores);
 }
-
 // テキスト「配列と繰り返し」
 function sum(arr){
   let n = 0;
-  for(let i = 0; i < arr.length; i++){ n += arr[i]; }
+  for(let i = 0; i < arr.length; i++){ n += arr[i]; }//配列名.lengthで配列のデータの戸数が分かる
   return n;
 }
 
 //　テキスト「配列と繰り返し」練習問題
 function average(arr){
+  let n = 0;
+  for(let i = 0; i < arr.length; i++){ n += arr[i]; }
+  n / arr.length;
+  return n;
   // BLANK[1]
+
 }
 
 function largest(arr){

@@ -11,6 +11,7 @@ function setup(){
       console.log(i + "年はうるう年ではありません");
     }
   }
+  daysInYear(1999);
 }
 
 function calendar(y, m){
@@ -22,10 +23,11 @@ function calendar(y, m){
 
 function isLeapYear(y){
   return (y % 4 == 0) && (y % 100 != 0) || (y % 400 == 0);
-}
+} //4で割り切れるけど100で割り切れない＋400で割り切れる
 
 function daysInYear(y){
-  // BLANK[1]
+  if (isLeapYear(y) ? console.log(y + "年は366日あります") : console.log(y + "年は365日あります")){
+  }
 }
 
 function daysInMonth(y, m){

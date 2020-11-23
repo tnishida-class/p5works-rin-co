@@ -13,13 +13,12 @@ function setup(){
 
 function draw(){
   background(160, 192, 255);
-  ellipse(x, y, 20, 20);
-  x += vx;
+  ellipse(x, y, 20, 20); //始点はウインドウの中心⇒x、yの増加によって移動
+  x += vx;　//xが1増えるごとにvx増価する
   y += vy;
 
   // 重力（コメント機能でオンオフ切り替えて実行してみましょう）
   vy = constrain(vy + g, -vyMax, vyMax);
-
   // 端の処理パターン (1) 反対側から出てくる
   // if(x > width){ x = 0; }
   // else if(x < 0){ x = width; }
